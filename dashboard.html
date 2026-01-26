@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>AIU Student Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin:0;font-family:Arial,sans-serif;background:#f2f4f7;}
+.student-header{position:fixed;top:0;right:0;left:0;height:70px;background:#1f2f3f;color:#fff;
+display:flex;align-items:center;justify-content:space-between;padding:0 15px;z-index:1000;
+box-shadow:0 2px 6px rgba(0,0,0,0.25);}
+.student-info{display:flex;align-items:center;gap:12px;}
+.student-info img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid #fff;}
+.student-text{display:flex;flex-direction:column;line-height:1.2;}
+.student-text .name{font-size:14px;font-weight:bold;}
+.student-text .details{font-size:12px;opacity:.9;}
+.logout-btn{background:#d9534f;border:none;color:#fff;padding:8px 14px;border-radius:6px;font-size:13px;cursor:pointer;}
+.page-content{padding-top:85px;padding:15px;}
+.title-bar{background:#1f2f3f;color:#fff;padding:12px;border-radius:6px;margin-bottom:15px;text-align:center;font-size:16px;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+.card{background:#fff;border-radius:10px;padding:15px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.15);cursor:pointer;}
+.card img{width:100px;height:100px;object-fit:contain;margin-bottom:10px;}
+.card span{display:block;font-size:14px;color:#333;font-weight:bold;}
+</style>
+</head>
+<body>
+<div class="student-header">
+  <div class="student-info">
+    <img src="student.jpg" alt="Student Photo">
+    <div class="student-text">
+      <span class="name">Hamada Kamal</span>
+      <span class="details">Dentistry — 23100325</span>
+    </div>
+  </div>
+  <button class="logout-btn" onclick="window.location.href='index.html'">تسجيل الخروج</button>
+</div>
+<div class="page-content">
+  <div class="title-bar">AIU Student Homepage</div>
+  <div class="grid">
+    <div class="card" onclick="window.location.href='grades.html'">
+      <img src="grades.png"><span>عرض التقديرات</span>
+    </div>
+    <div class="card" onclick="window.location.href='fees.html'">
+      <img src="fees.png"><span>الحساب المالي</span>
+    </div>
+    <div class="card" onclick="window.location.href='profile.html'">
+      <img src="profile.png"><span>ملف التعريف</span>
+    </div>
+    <div class="card" onclick="window.location.href='settings.html'">
+      <img src="settings.png"><span>User Settings</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
