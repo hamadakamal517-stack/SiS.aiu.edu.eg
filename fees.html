@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>الحساب المالي</title>
+<meta charset="UTF-8">
+<title>رصيد الحساب</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#ffffff;
+  color:#000;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f2f2f2;
-    }
+/* ===== Header ===== */
+.header{
+  background:#1f3b4d;
+  color:#fff;
+  padding:12px 15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.header-title{
+  font-size:18px;
+  font-weight:600;
+}
+.header-icon{
+  font-size:22px;
+}
 
-    /* Header */
-    .header {
-      background-color: #1f3b4d;
-      color: #fff;
-      padding: 12px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+/* ===== Content ===== */
+.container{
+  padding:15px;
+}
 
-    .header-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
+.notice{
+  color:#a05a2c;
+  font-size:18px;
+  margin-bottom:15px;
+}
 
-    .header-icon {
-      font-size: 22px;
-      cursor: pointer;
-    }
+/* ===== Table ===== */
+.table-box{
+  border:1px solid #dcdcdc;
+}
 
-    /* Content */
-    .content {
-      background-color: #fff;
-      margin-top: 10px;
-    }
+.table-header,
+.table-row{
+  display:flex;
+  align-items:center;
+  padding:15px;
+  border-bottom:1px solid #dcdcdc;
+  font-size:16px;
+}
 
-    .row {
-      padding: 18px;
-      border-bottom: 1px solid #ddd;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.table-header{
+  font-weight:600;
+  background:#f7f7f7;
+}
 
-    .row:last-child {
-      border-bottom: none;
-    }
+.col-term{
+  flex:1;
+}
 
-    .row:hover {
-      background-color: #f7f7f7;
-    }
+.col-amount{
+  flex:1;
+  text-align:left;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
 
-    .center-message {
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 18px;
-      color: #333;
-    }
+.arrow{
+  font-size:20px;
+  color:#555;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
+/* ===== Total ===== */
+.total{
+  display:flex;
+  justify-content:space-between;
+  padding:18px 15px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.currency{
+  padding:10px 15px;
+  font-size:15px;
+  color:#333;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Header -->
-  <div class="header">
-    <span class="header-icon">⋮</span>
-    <div class="header-title">الحساب المالي</div>
-    <a href="dashboard.html" class="header-icon">‹</a>
+<!-- Header -->
+<div class="header">
+  <span class="header-icon">⋮</span>
+  <div class="header-title">رصيد الحساب</div>
+  <a href="dashboard.html" class="header-icon" style="color:#fff;text-decoration:none;">‹</a>
+</div>
+
+<!-- Content -->
+<div class="container">
+
+  <div class="notice">ما أنا مدين به</div>
+
+  <div class="table-box">
+
+    <div class="table-header">
+      <div class="col-term">الفصل</div>
+      <div class="col-amount">المصروفات والإيداعات</div>
+    </div>
+
+    <div class="table-row">
+      <div class="col-term">ربيع 2025 / 2026</div>
+      <div class="col-amount">
+        <span class="arrow">‹</span>
+        <span>69.900,00</span>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Content -->
-  <div class="content">
-    <div class="center-message">
-      ليس عليك أي مصروفات مستحقة في الوقت الحالي
-    </div>
+  <div class="total">
+    <span>الإجمالي</span>
+    <span>69.900,00</span>
   </div>
+
+  <div class="currency">
+    العملة المستخدمة هي جنيه مصري
+  </div>
+
+</div>
 
 </body>
 </html>
