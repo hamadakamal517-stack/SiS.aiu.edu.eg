@@ -2,76 +2,104 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>AIU Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIU Login</title>
+
 <style>
-body{margin:0;font-family:Arial;background:#f5f7fa}
-  .page{
-padding:20px;
-max-width:700px;
+
+body{
+margin:0;
+background:#f3f3f5;
+font-family:Arial,sans-serif;
+}
+
+.page{
+max-width:500px;
 margin:auto;
-  }
+padding:20px;
+}
+
 .logo{
 width:100%;
-max-width:650px;
 display:block;
-margin:40px auto 30px;
+margin:30px auto;
 }
-.box{
-width:100%;
-max-width:520px;
-padding:0;
-background:transparent;
-box-shadow:none;
-border:none;
+
+label{
+display:block;
+margin:18px 0 8px;
+font-size:16px;
+color:#444;
 }
-label{display:block;margin-top:10px}
+
 input,select{
 width:100%;
 height:55px;
-padding:10px;
-margin-top:8px;
-border:1px solid #d0d0d0;
+border:1px solid #ccc;
 border-radius:8px;
-background:white;
+padding:10px;
 font-size:16px;
+background:white;
+box-sizing:border-box;
 }
+
 button{
 width:100%;
 height:55px;
 margin-top:20px;
 background:#2f73d2;
-color:white;
 border:none;
-border-radius:6px;
-font-size:18px;
+color:white;
+font-size:20px;
+border-radius:8px;
 }
+
 </style>
+
 </head>
+
 <body>
+
 <div class="page">
+
 <img src="logo.png" class="logo">
-  <div class="box">
-    <label>معرف مستخدم</label>
-    <input id="username" value="23100325">
-    <label>كلمة المرور</label>
-    <input id="password" type="password">
-    <label>حدد إحدى اللغات</label>
-    <select>
+
+<label>معرف مستخدم</label>
+<input id="username" value="23100325">
+
+<label>كلمة المرور</label>
+<input id="password" type="password">
+
+<label>حدد إحدى اللغات</label>
+
+<select>
 <option>العربية</option>
 <option>English</option>
-    </select>
-    <button onclick="login()">تسجيل الدخول</button>
-  </div>
+</select>
+
+<button onclick="login()">
+تسجيل الدخول
+</button>
+
 </div>
+
 <script>
+
 function login(){
-  if(username.value==="23100325" && password.value==="Hamada@#2005"){
-    window.location.href="dashboard.html";
-  }else{
-    alert("بيانات الدخول غير صحيحة");
-  }
+
+if(
+username.value==="23100325" &&
+password.value==="Hamada@#2005"
+){
+window.location.href="dashboard.html";
 }
+else{
+alert("بيانات الدخول غير صحيحة");
+}
+
+}
+
 </script>
+
 </body>
 </html>
