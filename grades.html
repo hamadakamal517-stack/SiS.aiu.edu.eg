@@ -1,58 +1,223 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
-<title>Fall 2025/2026 - Grades</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>عرض التقديرات</title>
+
 <style>
-body{font-family:Arial;background:#f4f6f9;margin:0}
-.header{background:#1f3d5a;color:#fff;padding:25px;text-align:center;font-size:28px}
 
-.gpa-wrap{display:flex;gap:25px;justify-content:center;margin:25px}
-.gpa-box{background:#fff;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,.25);
-padding:25px;width:45%;text-align:center;font-size:22px;font-weight:bold}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Tahoma,sans-serif;
+}
 
-.table-wrap{background:#fff;margin:25px;border-radius:14px;overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,.25)}
-table{width:100%;border-collapse:collapse;font-size:24px}
-th,td{padding:22px;border-bottom:1px solid #ddd;text-align:center}
-th{background:#eef3f7;font-size:25px}
+body{
+background:#f3f3f3;
+}
 
-.back{margin:25px;background:#777;color:#fff;padding:18px;border-radius:12px;
-text-align:center;text-decoration:none;display:block;font-size:20px}
+.header{
+background:#17263c;
+color:white;
+text-align:center;
+padding:18px;
+font-size:32px;
+font-weight:bold;
+}
+
+.semester{
+background:white;
+padding:20px;
+text-align:right;
+border-bottom:1px solid #ddd;
+}
+
+.semester h2{
+font-size:34px;
+}
+
+.semester p{
+font-size:24px;
+color:#444;
+}
+
+.gpa-box{
+background:white;
+margin:15px;
+border:1px solid #ddd;
+}
+
+.gpa-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+font-size:28px;
+border-bottom:1px solid #eee;
+}
+
+.gpa-row:last-child{
+border-bottom:none;
+}
+
+.count{
+padding:15px;
+font-size:28px;
+font-weight:bold;
+}
+
+.course-card{
+background:white;
+margin:15px;
+padding:20px;
+border:1px solid #ddd;
+}
+
+.course-title{
+font-size:34px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.course-info{
+font-size:26px;
+line-height:2;
+color:#333;
+}
+
+.back{
+display:block;
+margin:20px;
+padding:15px;
+background:#666;
+color:white;
+text-align:center;
+text-decoration:none;
+font-size:24px;
+border-radius:10px;
+}
+
 </style>
+
 </head>
+
 <body>
 
-<div class="header">Fall 2025/2026</div>
-
-<div class="gpa-wrap">
-  <div class="gpa-box">GPA الفصل: 3.7</div>
-  <div class="gpa-box">GPA التراكمي: 3.3</div>
+<div class="header">
+عرض التقديرات
 </div>
 
-<div class="table-wrap">
-<table>
-<tr>
-<th>الكود</th>
-<th>المقرر</th>
-<th>الساعات</th>
-<th>التقدير</th>
-</tr>
-<tr><td>BDS211</td><td>Oral Biology 1</td><td>2</td><td>A</td></tr>
-<tr><td>BMS261</td><td>Pharmacology 1</td><td>1</td><td>C</td></tr>
-<tr><td>BMS251</td><td>General Pathology</td><td>2</td><td>-A</td></tr>
-<tr><td>BMS271</td><td>General Microbiology</td><td>1</td><td>B</td></tr>
-<tr><td>CDD211</td><td>Operative Dentistry 1</td><td>2</td><td>+A</td></tr>
-<tr><td>LAN112</td><td>Critical Thinking</td><td>2</td><td>+B</td></tr>
-<tr><td>MGT201</td><td>Negotiation Skills</td><td>2</td><td>A</td></tr>
-<tr><td>PDD211</td><td>Fixed Prosthodontics 1</td><td>2</td><td>A-</td></tr>
-<tr><td>PDD221</td><td>Removable Prosthodontics 1</td><td>2</td><td>A</td></tr>
-<tr><td>PDD233</td><td>Dental Biomaterials 3</td><td>2</td><td>+B</td></tr>
-<tr><td>MIL011</td><td>Military Education</td><td>-</td><td>S</td></tr>
-</table>
+<div class="semester">
+<h2>ربيع 2025-2026</h2>
+<p>طالب جامعي</p>
 </div>
 
-<a class="back" href="dashboard.html">رجوع</a>
+<div class="gpa-box">
+
+<div class="gpa-row">
+<span>GPA للفصل</span>
+<strong>3.667</strong>
+</div>
+
+<div class="gpa-row">
+<span>GPA التراكمي</span>
+<strong>3.273</strong>
+</div>
+
+</div>
+
+<div class="count">
+9 صف / صفوف
+</div>
+
+<div class="course-card">
+<div class="course-title">BDS212 - BDS212</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : A<br>
+نقاط التقدير : 4.000
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">BDS261 - BDS261</div>
+<div class="course-info">
+الوحدات : 1.00<br>
+التقدير : A<br>
+نقاط التقدير : 4.000
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">BMS252 - BMS252</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : B<br>
+نقاط التقدير : 3.000
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">CDD212 - CDD212</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : A+<br>
+نقاط التقدير : 4.333
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">CDD221 - CDD221</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : B+<br>
+نقاط التقدير : 3.333
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">PDD212 - PDD212</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : A-<br>
+نقاط التقدير : 3.667
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">PDD222 - PDD222</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : A<br>
+نقاط التقدير : 4.000
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">PDD271 - PDD271</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : B<br>
+نقاط التقدير : 3.000
+</div>
+</div>
+
+<div class="course-card">
+<div class="course-title">BMS252 - BMS252</div>
+<div class="course-info">
+الوحدات : 2.00<br>
+التقدير : C<br>
+نقاط التقدير : 2.000
+</div>
+</div>
+
+<a class="back" href="dashboard.html">
+رجوع
+</a>
 
 </body>
 </html>
