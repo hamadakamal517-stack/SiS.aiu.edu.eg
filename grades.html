@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>عرض التقديرات</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Tahoma, Arial, sans-serif;
-}
-
 body{
-background:#f3f5f7;
+margin:0;
+background:#f2f2f2;
+font-family:Arial,sans-serif;
 }
 
 .header{
-background:#17263c;
+background:#16263c;
 color:white;
-padding:18px;
 text-align:center;
-font-size:28px;
-font-weight:bold;
+padding:18px;
+font-size:22px;
 }
 
 .semester{
 background:white;
 padding:20px;
-margin-bottom:10px;
-box-shadow:0 2px 4px rgba(0,0,0,.1);
+border-bottom:1px solid #ddd;
 }
 
 .semester h2{
-font-size:24px;
-margin-bottom:8px;
+margin:0;
+font-size:18px;
+font-weight:bold;
 }
 
 .semester p{
-color:#666;
-font-size:16px;
+margin:5px 0 0;
+font-size:14px;
+color:#444;
 }
 
-.gpa-card{
+.change-btn{
+margin:15px;
+background:white;
+border:2px solid #2b73c9;
+color:#2b73c9;
+width:120px;
+height:55px;
+border-radius:8px;
+font-size:18px;
+}
+
+.gpa-box{
 background:white;
 margin:15px;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 2px 6px rgba(0,0,0,.15);
+border:1px solid #d5d5d5;
 }
 
 .gpa-row{
 display:flex;
 justify-content:space-between;
-padding:18px;
+padding:22px;
 font-size:18px;
 border-bottom:1px solid #eee;
 }
@@ -70,43 +72,50 @@ border-bottom:none;
 padding:15px;
 font-size:18px;
 font-weight:bold;
-color:#333;
 }
 
 .course-card{
+position:relative;
 background:white;
 margin:15px;
-padding:18px;
-border-radius:12px;
-box-shadow:0 2px 6px rgba(0,0,0,.15);
+border:1px solid #d5d5d5;
+padding:25px;
+min-height:180px;
+}
+
+.arrow{
+position:absolute;
+left:15px;
+top:50%;
+transform:translateY(-50%);
+font-size:42px;
+color:#666;
 }
 
 .course-title{
 font-size:20px;
 font-weight:bold;
-color:#17263c;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .course-info{
 font-size:16px;
-line-height:2;
+line-height:2.2;
+color:#444;
 }
 
 .back{
 display:block;
 margin:20px;
 padding:15px;
-text-align:center;
 background:#666;
 color:white;
 text-decoration:none;
-border-radius:10px;
-font-size:18px;
+text-align:center;
+border-radius:8px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -116,11 +125,13 @@ font-size:18px;
 </div>
 
 <div class="semester">
-<h2>Fall 2025 / 2026</h2>
+<h2>ربيع 2025-2026</h2>
 <p>طالب جامعي</p>
 </div>
 
-<div class="gpa-card">
+<button class="change-btn">تغيير</button>
+
+<div class="gpa-box">
 
 <div class="gpa-row">
 <span>GPA للفصل</span>
@@ -139,80 +150,96 @@ font-size:18px;
 </div>
 
 <div class="course-card">
-<div class="course-title">BDS212</div>
+<div class="arrow">‹</div>
+<div class="course-title">BDS212 - BDS212</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: A
+الوحدات 2.00<br>
+التقدير A<br>
+نقاط التقدير 4.000
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">BDS261</div>
+<div class="arrow">‹</div>
+<div class="course-title">BDS261 - BDS261</div>
 <div class="course-info">
-الوحدات: 1.00<br>
-التقدير: A
+الوحدات 1.00<br>
+التقدير A<br>
+نقاط التقدير 4.000
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">BMS252</div>
+<div class="arrow">‹</div>
+<div class="course-title">BMS252 - BMS252</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: B
+الوحدات 2.00<br>
+التقدير B<br>
+نقاط التقدير 3.000
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">CDD212</div>
+<div class="arrow">‹</div>
+<div class="course-title">CDD212 - CDD212</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: A+
+الوحدات 2.00<br>
+التقدير A+<br>
+نقاط التقدير 4.333
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">CDD221</div>
+<div class="arrow">‹</div>
+<div class="course-title">CDD221 - CDD221</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: B+
+الوحدات 2.00<br>
+التقدير B+<br>
+نقاط التقدير 3.333
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">PDD212</div>
+<div class="arrow">‹</div>
+<div class="course-title">PDD212 - PDD212</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: A-
+الوحدات 2.00<br>
+التقدير A-<br>
+نقاط التقدير 3.667
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">PDD222</div>
+<div class="arrow">‹</div>
+<div class="course-title">PDD222 - PDD222</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: A
+الوحدات 2.00<br>
+التقدير A<br>
+نقاط التقدير 4.000
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">PDD271</div>
+<div class="arrow">‹</div>
+<div class="course-title">PDD271 - PDD271</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: B
+الوحدات 2.00<br>
+التقدير B<br>
+نقاط التقدير 3.000
 </div>
 </div>
 
 <div class="course-card">
-<div class="course-title">BMS252</div>
+<div class="arrow">‹</div>
+<div class="course-title">BMS252 - BMS252</div>
 <div class="course-info">
-الوحدات: 2.00<br>
-التقدير: C
+الوحدات 2.00<br>
+التقدير C<br>
+نقاط التقدير 2.000
 </div>
 </div>
 
-<a class="back" href="dashboard.html">
-رجوع
-</a>
+<a class="back" href="dashboard.html">رجوع</a>
 
 </body>
 </html>
