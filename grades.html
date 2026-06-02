@@ -11,9 +11,15 @@ body{
 margin:0;
 background:#f2f2f2;
 font-family:Arial,sans-serif;
+padding-top:120px;
 }
 
 .header{
+position:fixed;
+top:0;
+right:0;
+left:0;
+z-index:1000;
 background:#16263c;
 color:white;
 text-align:center;
@@ -23,6 +29,11 @@ font-weight:normal;
 }
 
 .semester{
+position:fixed;
+top:50px;
+right:0;
+left:0;
+z-index:999;
 background:white;
 padding:15px;
 border-bottom:1px solid #ddd;
@@ -133,8 +144,6 @@ font-size:14px;
 <p>طالب جامعي</p>
 </div>
 
-<button class="change-btn">تغيير</button>
-
 <div class="gpa-box">
 
 <div class="gpa-row">
@@ -144,7 +153,7 @@ font-size:14px;
 
 <div class="gpa-row">
 <span>GPA التراكمي</span>
-<strong>3.273</strong>
+<strong>3.373</strong>
 </div>
 
 </div>
