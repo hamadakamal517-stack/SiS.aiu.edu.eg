@@ -7,10 +7,29 @@
 <style>
 body{margin:0;font-family:Arial;background:#f5f7fa}
 .page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
-.logo{width:280px;margin-bottom:20px}
-.box{width:100%;max-width:400px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1)}
+.logo{
+width:100%;
+max-width:420px;
+margin-bottom:20px;
+display:block;
+.box{
+width:100%;
+max-width:340px;
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1)
+}
 label{display:block;margin-top:10px}
-input,select{width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:6px}
+input,select{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+height:45px;
+}
 button{width:100%;margin-top:15px;padding:14px;background:#2a6ecb;color:#fff;border:none;border-radius:6px;font-size:16px}
 </style>
 </head>
@@ -23,7 +42,10 @@ button{width:100%;margin-top:15px;padding:14px;background:#2a6ecb;color:#fff;bor
     <label>كلمة المرور</label>
     <input id="password" type="password">
     <label>حدد إحدى اللغات</label>
-    <select><option>العربية</option></select>
+    <select>
+<option>العربية</option>
+<option>English</option>
+    </select>
     <button onclick="login()">تسجيل الدخول</button>
   </div>
 </div>
