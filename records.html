@@ -28,16 +28,22 @@ border-radius:8px;
 box-shadow:0 2px 5px rgba(0,0,0,.15);
 font-size:16px;
 font-weight:bold;
-cursor:pointer;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 a{
 text-decoration:none;
 color:black;
 }
+
+.arrow{
+font-size:22px;
+color:#666;
+}
 </style>
 </head>
-
 <body>
 
 <div class="header">
@@ -46,7 +52,15 @@ Records Self-Service
 
 <a href="grades.html">
 <div class="item">
-عرض التقديرات
+<span>عرض التقديرات</span>
+<span class="arrow">‹</span>
+</div>
+</a>
+
+<a href="holds.html">
+<div class="item">
+<span>الإيقافات</span>
+<span class="arrow">‹</span>
 </div>
 </a>
 
