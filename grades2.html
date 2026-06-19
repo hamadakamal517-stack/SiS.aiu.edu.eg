@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض التقديرات - AIU</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        /* الشريط العلوي الداكن */
+        .header {
+            background-color: #24292e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-title {
+            font-size: 18px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .back-btn {
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        /* حاوية المحتوى */
+        .content {
+            padding: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+        .term-info {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .term-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .change-btn {
+            color: #1a4a8d;
+            border: 1px solid #1a4a8d;
+            padding: 5px 15px;
+            background: white;
+            border-radius: 4px;
+            float: left;
+            cursor: pointer;
+        }
+        /* كروت البيانات والدرجات */
+        .info-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .data-row:last-child { border-bottom: none; }
+        .label { color: #666; font-size: 14px; }
+        .value { font-weight: bold; font-size: 16px; }
+        .course-header {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="back-btn">&#10095;</span>
+        <span class="header-title">عرض التقديرات</span>
+        <span>&#8942;</span>
+    </div>
+
+    <div class="content">
+        <div class="term-info">
+            <button class="change-btn">تغيير</button>
+            <div class="term-title">خريف 2025-2026</div>
+            <div style="font-size: 14px; color: #666;">طالب جامعي</div>
+        </div>
+
+        <div class="info-card">
+            <div class="data-row">
+                <span class="label">GPA للفصل</span>
+                <span class="value">2.667</span>
+            </div>
+            <div class="data-row">
+                <span class="label">GPA التراكمي</span>
+                <span class="value">2.387</span>
+            </div>
+            <div class="data-row">
+                <span class="label">الوضع الأكاديمي</span>
+                <span class="value" style="color: #27ae60;">Good Standing</span>
+            </div>
+        </div>
+
+        <h4 style="margin-right: 5px;">الصفوف</h4>
+
+        <div class="info-card">
+            <span class="course-header">BDS 211 - BDS211</span>
+            <div class="data-row"><span class="label">الوحدات</span><span class="value">2.00</span></div>
+            <div class="data-row"><span class="label">التقدير</span><span class="value">Graded</span></div>
+            <div class="data-row"><span class="label">التقدير</span><span class="value" style="color: #c0392b;">C+</span></div>
+            <div class="data-row"><span class="label">نقاط التقدير</span><span class="value">4.600</span></div>
+        </div>
+
+        <div class="info-card">
+            <span class="course-header">BMS 251 - BMS251</span>
+            <div class="data-row"><span class="label">الوحدات</span><span class="value">2.00</span></div>
+            <div class="data-row"><span class="label">التقدير</span><span class="value">Graded</span></div>
+            <div class="data-row"><span class="label">التقدير</span><span class="value">B</span></div>
+            <div class="data-row"><span class="label">نقاط التقدير</span><span class="value">6.000</span></div>
+        </div>
+    </div>
+
+</body>
+</html>
